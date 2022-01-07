@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="module">
+			import { Pandemic } from 'pandemicjs/index.esm.min.js'
+			new Pandemic('.world', {
+				n: 800,
+				fps: 30,
+				play: false,
+				hospital: false,
+				splashDistance: 30,
+				infectionRate: 0.1,
+				onsetPeriod: 100,
+				antiBodyPeriod: 200
+			})
+		</script>
+		<div class="world" style="height: 800px; width: 800px;"></div>
+	</body>
+</html>
